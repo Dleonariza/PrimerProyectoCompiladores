@@ -204,7 +204,7 @@ class Lenguaje{
 
     InversaLenguaje(Vector){
         var VectorInvertido = [];
-        for(var i = 0 ; i < Vector.length; i++){
+        /*for(var i = 0 ; i < Vector.length; i++){
             var ValorIndice = Vector[i].length;
             var Caracter = " ";
             for(var j = ValorIndice; j >= 0; j--){
@@ -213,6 +213,9 @@ class Lenguaje{
                 }
             }
             VectorInvertido.push(Caracter);
+        }*/
+        for(var i = vector.length; i > 0; i--){
+            VectorInvertido.push(vector[i]);
         }
         document.getElementById("Mostrador").innerHTML = VectorInvertido.toString();
         console.log(VectorInvertido.toString());
