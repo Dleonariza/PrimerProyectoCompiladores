@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+
+	/* Color de placeholder */
+	::-webkit-input-placeholder { color: rgb(255, 255, 255); } 
+
+	body{
+		background: url(https://www.xtrafondos.com/wallpapers/montanas-con-nieve-en-el-bosque-3934.jpg);
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;
+	}
+
+	h2{
+		text-align: center;
+		color: white;
+		font-family: 'Montserrat Alternates', sans-serif;
+		font-weight: 400;
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	/*Fin de Menù lateral*/
+
+	/* Estilos inputs */
+	.ContainerInputs{
+		display: flex;
+		width: 70%;
+		margin: auto;
+		justify-content: center;
+		margin-top: 100px;
+	}
+	
+	.ContainerInputs input{
+		width: 40%;
+		height: 30px;
+		margin: 30px;
+		border: none;
+		outline: none;
+		background: local;
+		border-bottom: 1px solid #fff;
+		font-family: "Montserrat", sans-serif;
+		color: white;
+	}
+
+	.Botones{
+		margin: 10px;
+		background: #24252A;
+		border-radius: 10px;
+		padding: 5px;
+		width: 125px;
+		height: 30px;
+		color: #edf0f1;
+		text-align: center;
+		font-family: "Montserrat", sans-serif;
+		font-size: 15px;
+		margin-top: 30px;
+		cursor: pointer;
+	}
+	
+	.Botones:hover{
+		background: #3A3A3A;
+		color: #0088a9;
+	}
+
+	/*Fin de estilos input*/
+
+	/*Estilos consola*/
+
+	.Consola{
+		clear: left;
+		width: 50%;
+		margin: auto;
+	}
+	
+	.Botones_Consola{
+		background: #3A3A3A;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		height: 30px;
+		padding-left: 10px;
+	}
+	
+	.Botones_Consola div{
+		float: left;
+		margin: 8px 5px;
+		border-radius: 50%;
+		width: 13px;
+		height: 13px;
+		background: #a3a2a2;
+	}
+	
+	.Pantalla{
+		overflow: auto;
+		background: #0F0F0F;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	
+	.Pantalla p{
+		color: white;
+		font-family: 'Montserrat Alternates', sans-serif;
+		font-weight: 400;
+		padding: 15px;
+	}
+
+	/*Fin de estilos consola*/

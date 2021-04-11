@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Compiladores</title>
+	<link rel="stylesheet" href="assets/css/estilos.css">
+	<link rel="shortcut icon" href="assets/images/compilador.png" type="image/x-icon">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="btn-menu">
+				<label for="btn-menu">☰</label>
+			</div>
+			<div class="logo">
+				<h1>COMPILADORES</h1>
+			</div>
+			<nav class="menu">
+				<a href="Abecedario.html">Alfabeto</a>
+				<a href="Lenguaje.html">Lenguaje</a>
+				<a href="Palabra.html">Palabra</a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="capa"></div>
+
+	<!----------------->
+	
+	<input type="checkbox" id="btn-menu">
+	<div class="container-menu">
+		<div class="cont-menu">
+			<nav>
+				<a onclick="Menu('Union')">Union</a>
+				<a onclick="Menu('Interseccion')">Interseccion</a>
+				<a onclick="Menu('Diferencia')">Diferencia</a>
+				<a onclick="Menu('Concatenacion')">Concatenacion</a>
+				<a onclick="Menu('PotenciaLenguajeUno')">Potencia Lenguaje Uno</a>
+				<a onclick="Menu('PotenciaLenguajeDos')">Potencia Lenguaje Dos</a>
+				<a onclick="Menu('InversaLenguajeUno')">Inversa lenguaje uno</a>
+				<a onclick="Menu('InversaLenguajeDos')">Inversa lenguaje dos</a>
+				<a onclick="Menu('Cardinalidad')">Cardinalidad</a>
+			</nav>
+			<label for="btn-menu">✖️</label>
+		</div>
+	</div>
+
+	<div class="ContainerInputs">
+        <input type="text" id="ILU" placeholder="Lenguaje Uno">
+        <div class="Botones" onclick="AgregarLenguaje('ILU')" id="BotonILU">Agregar</div>
+        <input type="text"  id="ILT" placeholder="Lenguaje Dos">
+        <div class="Botones" onclick="AgregarLenguaje('ILT')" id="BotonILT">Agregar</div>
+    </div>
+
+	<h2>Consola de resultados</h2>
+    <div class="Consola">
+        <div class="Botones_Consola">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="Pantalla">
+            <p id="Mostrador"></p>
+        </div>
+    </div>
+
+	<script>
+		document.getElementById("Mostrador").innerHTML = "El elemento vacio esta expresado como #";
+	</script>
+</body>
+<script src="assets/js/app.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</html>

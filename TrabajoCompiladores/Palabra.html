@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compiladores</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="shortcut icon" href="assets/images/compilador.png" type="image/x-icon">
+</head>
+<body>
+    
+	<header class="header">
+		<div class="container">
+			<div class="btn-menu">
+				<label for="btn-menu">☰</label>
+			</div>
+			<div class="logo">
+				<h1>COMPILADORES</h1>
+			</div>
+			<nav class="menu">
+				<a href="Abecedario.html">Alfabeto</a>
+				<a href="Lenguaje.html">Lenguaje</a>
+				<a href="Palabra.html">Palabra</a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="capa"></div>
+
+	<!----------------->
+	
+	<input type="checkbox" id="btn-menu">
+	<div class="container-menu">
+		<div class="cont-menu">
+			<nav>
+				<a onclick="Menu('InversaPalabra')">Inversa</a>
+				<a onclick="Menu('CardinalidadPalabra')">Cardinalidad</a>
+			</nav>
+			<label for="btn-menu">✖️</label>
+		</div>
+	</div>
+
+	<div class="ContainerInputs">
+        <input type="text" id="Palabra" placeholder="Palabra">
+        <div class="Botones" onclick="Menu('PalabraAgg')" id="BotonILU">Agregar</div>
+    </div>
+
+	<h2>Consola de resultados</h2>
+    <div class="Consola">
+        <div class="Botones_Consola">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="Pantalla">
+            <p id="Mostrador"></p>
+        </div>
+    </div>
+
+</body>
+<script src="assets/js/app.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</html>
